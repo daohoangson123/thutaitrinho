@@ -67,11 +67,7 @@ let manMot = [
     getRandomInteger(0,9),
 ];
 
-console.log(manMot);
-
-// let soMot = document.getElementById('sothunhat');
-
-// soMot.innerText = manMot[0];
+// console.log(manMot);
 
 // Hiển thị số
 const hienSo = () => {   
@@ -88,7 +84,6 @@ const hienSo = () => {
                 nhaySo[i].innerHTML = '';
         }
     }, 1000);
-    return manMot;
 }
 // hienSo();
 
@@ -97,7 +92,6 @@ let choiLai = document.getElementById('choilai');
 
 choiLai.onclick = function() {
     hienSo();
-    return manMot;
 }
 
 
@@ -108,16 +102,28 @@ reset.onclick = function() {
 };
 
 //
-let laySo = document.getElementById("so1");
+// let laySo = document.getElementById('so1');
+
+let laySo = document.getElementsByClassName('sonhap');
+
+console.log(laySo.value);
 
 //
 let traLoi = document.getElementById('traloi');
 
+let ketQua = document.getElementById('ketqua');
+
 traLoi.onclick = function() {
-    // myFunction();
-    if (laySo.value == manMot[0]) {
-        console.log('dung');
-    } else {
-        console.log('sai');
+    let flag = true; // đặt flag
+    for (i = 0; i < manMot.length; i++) {
+        if (laySo[i].value != manMot[i]) {
+            console.log('sai');
+            ketQua.innerText = 'Đáp án chưa chính xác';
+            flag = false;
+        }
     }
+        if (flag === true) {
+            console.log('dung');
+            ketQua.innerText = 'Đáp án chính xác, qua màn'
+        }
 }
