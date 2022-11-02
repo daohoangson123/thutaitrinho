@@ -119,10 +119,10 @@ traLoi.onclick = function() {
         if (laySo[i].value != manMot[i]) {
             console.log('sai');
             ketQua.innerText = 'Đáp án chưa chính xác';
-            flag = false;
+            flag == false;
         }
     }
-        if (flag === true) {
+        if (flag == true) {
             console.log('dung');
             ketQua.innerText = 'Đáp án chính xác, qua màn'
         }
