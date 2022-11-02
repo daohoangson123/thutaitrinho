@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.hienso, .nhapso {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.sohien, input {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+input:hover {
+    border: 3px solid black;
+}
