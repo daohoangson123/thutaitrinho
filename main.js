@@ -110,11 +110,6 @@ reset.onclick = function() {
 //
 let laySo = document.getElementById("so1");
 
-function myFunction() {
-    let laySo = document.getElementById("so1").value;
-    document.getElementById("demo").innerHTML = laySo;
-}
-
 //
 let traLoi = document.getElementById('traloi');
 
