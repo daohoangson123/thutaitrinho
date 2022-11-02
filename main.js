@@ -107,22 +107,22 @@ reset.onclick = function() {
     location.reload();
 };
 
+//
 let laySo = document.getElementById("so1");
 
 function myFunction() {
-    var laySo = document.getElementById("so1").value;
+    let laySo = document.getElementById("so1").value;
     document.getElementById("demo").innerHTML = laySo;
 }
 
+//
 let traLoi = document.getElementById('traloi');
 
 traLoi.onclick = function() {
-    myFunction();
-    // for (i = 0; i < manMot.length; i++) {
-    //     if (laySo[i] == manMot[i]) {
-    //         console.log("đúng ròi qua màn");
-    //     } else {
-    //         console.log("sai ròi thg ngu");
-    //     }
-    // }
+    // myFunction();
+    if (laySo.value == manMot[0]) {
+        console.log('dung');
+    } else {
+        console.log('sai');
+    }
 }
